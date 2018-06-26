@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 import pydotplus
+from decision_tree_graphviz import visualization
 
 DATA_FILE = './Iris.csv'
 iris_data = pd.read_csv(DATA_FILE)
@@ -58,5 +59,6 @@ def main():
 
         decision_tree_plot(dt_model, d)
         feature_importance(dt_model, d)
+        visualization(dt_model, d)
 
 main()
