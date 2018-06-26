@@ -59,6 +59,7 @@ def main():
 
         decision_tree_plot(dt_model, d)
         feature_importance(dt_model, d)
+
         visualization(dt_model, d)
 
 main()
