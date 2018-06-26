@@ -1,6 +1,6 @@
 digraph Tree {
 node [shape=box, style="filled", color="black"] ;
-0 [label="PetalWidthCm <= 0.75\nsamples = 100\nvalue = [35, 31, 34]\nclass = Iris-setosa", fillcolor="#e5813904"] ;
+0 [label="PetalLengthCm <= 2.45\nsamples = 100\nvalue = [35, 31, 34]\nclass = Iris-setosa", fillcolor="#e5813904"] ;
 1 [label="samples = 35\nvalue = [35, 0, 0]\nclass = Iris-setosa", fillcolor="#e58139ff"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
 2 [label="PetalLengthCm <= 4.75\nsamples = 65\nvalue = [0, 31, 34]\nclass = Iris-virginica", fillcolor="#8139e517"] ;
