@@ -28,7 +28,7 @@ def decision_tree_plot(dt_model,depth):
     with open(tem_dot_file) as f:
         dot_graph = f.read()
     graph = pydotplus.graph_from_dot_data(dot_graph)
-    graph.write_png('Tree_depth_{}.png'.format(depth))
+    graph.write_png('./plot/Tree_depth_{}.png'.format(depth))
 
 
 def feature_importance(dt_model, depth):
@@ -38,7 +38,8 @@ def feature_importance(dt_model, depth):
     plt.ylabel('Features')
     plt.yticks(np.arange(len(FEAT_COLS)), FEAT_COLS)
     plt.title('Feature Importance_depth_{}'.format(depth))
-    plt.savefig('./Feature Importance_depth_{}'.format(depth))
+    plt.tight_layout()
+    plt.savefig('./plot/Feature Importance_depth_{}'.format(depth))
     plt.show()
 
 
